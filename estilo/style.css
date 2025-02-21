@@ -178,3 +178,127 @@ section{
     grid-template-columns: auto auto auto;
     gap: 3rem 1.2rem;
 }
+.card-destino{
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+.card-destino img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+.card-destino > div{
+    padding: 1rem;
+}
+.card-destino span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.card-destino p{
+    margin: 1rem 0 ;
+    text-align: justify;
+    color: var(--cor03);
+}
+.valor{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin: 1rem auto;
+}
+.valor div{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.valor span{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: var(--cor03);
+    margin-left: 0.5rem;
+}
+.card-btn{
+    text-align: right;
+}
+/*avaliacoes*/
+.avaliacoes{
+    text-align: center;
+    width: 75%;/*ocupa um espaço de leitura legal*/
+    min-height: 50vh;
+    margin: 1rem auto;
+    padding: 6rem 3rem 2rem;
+}
+.avaliacoes h1{
+    font-family: var(--font-secundaria);
+    color: var(--cor-principal);
+}
+.avaliacoes p{
+    margin: 1rem auto;
+    color: var(--cor03);
+}
+.avaliacoes img{
+    border: 0.1rem solid var(--cor-destaque);
+    border-radius: 50%;
+    background-color: var(--cor-destaque);
+    outline: none;
+    width: 10rem;
+}
+.avaliacoes span{
+    font-weight: 700;
+}
+.carrossel{
+    position: relative;
+    padding: 0 5rem;
+    margin: auto;
+}
+.carrossel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--cor05);
+    color: var(--cor01);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+.carrossel button:hover{
+    background-color: var(--cor03);
+}
+.anterior{
+    left: 0;
+}
+.proximo{
+    right: 0;
+}
+/*rodape*/
+footer{
+    background-color: var(--cor04);
+    color: var(--cor02);
+    padding: 2rem 5rem;
+    display: flex;
+    font-size: 0.8rem;
+}
+footer div{
+    flex: 1;
+    padding: 0 0.3rem;
+}
+footer h3{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+footer .input-group{
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem;
+}
+footer input{
+    background-color: var(--cor01);
+    color: var(--cor04);
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 0.1rem;
+}
